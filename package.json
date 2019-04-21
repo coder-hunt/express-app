@@ -4,7 +4,7 @@
   "description": "express-app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --timeout 30000 --recursive --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/coder-hunt/express-app#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "express": "^4.16.4",
+    "mocha": "^3.4.2",
+    "supertest": "^4.0.2"
   }
 }
